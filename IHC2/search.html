@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4BOSS - Buscar Superesportivos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container search-container">
+        <!-- Header - TopAppBar -->
+        <header class="header">
+            <div class="header-left">
+                <a href="index.html" class="logo-link">
+                    <h1 class="logo">4BOSS</h1>
+                </a>
+            </div>
+            <div class="header-right">
+                <button class="header-menu-btn" id="filterToggle" aria-label="Open filters">
+                    <svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="4" y1="6" x2="20" y2="6"></line>
+                        <line x1="4" y1="12" x2="20" y2="12"></line>
+                        <line x1="4" y1="18" x2="20" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </header>
+
+        <main class="main search-main">
+            <section class="search-section">
+                <div class="search-input-wrapper">
+                    <input type="text" class="search-input" placeholder="BUSCAR NA GARAGEM 4BOSS...">
+                    <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </div>
+                <button class="filter-button" id="filterButton" type="button" aria-label="Open filters">
+                    <svg class="filter-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="4" y1="6" x2="20" y2="6"></line>
+                        <line x1="4" y1="12" x2="20" y2="12"></line>
+                        <line x1="4" y1="18" x2="20" y2="18"></line>
+                    </svg>
+                </button>
+            </section>
+
+            <section class="inventory-grid">
+                <a href="details.html" class="car-card">
+                    <div class="card-image-container">
+                        <img src="assets/card-porsche.png" alt="Porsche 911 GT3 RS" class="card-car-image">
+                        <div class="card-gradient"></div>
+                        <div class="card-badge in-stock">IN STOCK</div>
+                    </div>
+                    <div class="card-details">
+                        <p class="card-specs">PORSCHE • 2024 • SHARK BLUE</p>
+                        <h3 class="card-model">911 GT3 RS</h3>
+                        <div class="card-divider"></div>
+                        <div class="card-performance">
+                            <div class="perf-item">
+                                <span class="perf-label">HP</span>
+                                <span class="perf-value">525</span>
+                            </div>
+                            <div class="perf-item">
+                                <span class="perf-label">0-100</span>
+                                <span class="perf-value">3.2s</span>
+                            </div>
+                        </div>
+                        <p class="card-price">R$ 2.450.000</p>
+                    </div>
+                </a>
+
+                <a href="details.html" class="car-card">
+                    <div class="card-image-container">
+                        <img src="assets/card-ferrari.png" alt="Ferrari SF90 Stradale" class="card-car-image">
+                        <div class="card-gradient"></div>
+                        <div class="card-badge exclusive">EXCLUSIVELY AT 4BOSS</div>
+                    </div>
+                    <div class="card-details">
+                        <p class="card-specs">FERRARI • 2023 • ROSSO CORSA</p>
+                        <h3 class="card-model">SF90 STRADALE</h3>
+                        <div class="card-divider"></div>
+                        <div class="card-performance">
+                            <div class="perf-item">
+                                <span class="perf-label">HP</span>
+                                <span class="perf-value">1000</span>
+                            </div>
+                            <div class="perf-item">
+                                <span class="perf-label">0-100</span>
+                                <span class="perf-value">2.5s</span>
+                            </div>
+                        </div>
+                        <p class="card-price">R$ 4.890.000</p>
+                    </div>
+                </a>
+
+                <a href="details.html" class="car-card">
+                    <div class="card-image-container">
+                        <img src="assets/card-lamborghini.png" alt="Lamborghini Aventador SVJ" class="card-car-image">
+                        <div class="card-gradient"></div>
+                        <div class="card-badge sold">SOLD</div>
+                    </div>
+                    <div class="card-details">
+                        <p class="card-specs">LAMBORGHINI • 2022 • NERO NEMESIS</p>
+                        <h3 class="card-model">AVENTADOR SVJ</h3>
+                        <div class="card-divider"></div>
+                        <div class="card-performance">
+                            <div class="perf-item">
+                                <span class="perf-label">HP</span>
+                                <span class="perf-value">770</span>
+                            </div>
+                            <div class="perf-item">
+                                <span class="perf-label">0-100</span>
+                                <span class="perf-value">2.8s</span>
+                            </div>
+                        </div>
+                        <p class="card-price">SOB CONSULTA</p>
+                    </div>
+                </a>
+
+                <a href="details.html" class="car-card">
+                    <div class="card-image-container">
+                        <img src="assets/card-bmw.png" alt="BMW M4 Competition" class="card-car-image">
+                        <div class="card-gradient"></div>
+                        <div class="card-badge custom">CUSTOM BUILD</div>
+                    </div>
+                    <div class="card-details">
+                        <p class="card-specs">BMW • 2024 • ISLE OF MAN GREEN</p>
+                        <h3 class="card-model">M4 COMPETITION</h3>
+                        <div class="card-divider"></div>
+                        <div class="card-performance">
+                            <div class="perf-item">
+                                <span class="perf-label">HP</span>
+                                <span class="perf-value">510</span>
+                            </div>
+                            <div class="perf-item">
+                                <span class="perf-label">0-100</span>
+                                <span class="perf-value">3.9s</span>
+                            </div>
+                        </div>
+                        <p class="card-price">R$ 890.000</p>
+                    </div>
+                </a>
+            </section>
+
+            <section class="search-cta-section">
+                <div class="cta-content-search">
+                    <h3 class="cta-title-search">PROCURA ALGO<br>ÚNICO?</h3>
+                    <p class="cta-description-search">Nosso serviço de Personal Concierge<br>localiza e importa qualquer veículo<br>exclusivo diretamente para sua<br>garagem 4Boss.</p>
+                    <button class="btn btn-specialist">FALAR COM<br>ESPECIALISTA</button>
+                </div>
+            </section>
+        </main>
+
+        <div class="filter-overlay" id="filterOverlay">
+            <div class="filter-panel">
+                <div class="filter-panel-header">
+                    <h3 class="filter-panel-title">FILTERS</h3>
+                    <button class="filter-close-btn" id="filterClose" type="button" aria-label="Close filters">✕</button>
+                </div>
+
+                <div class="filter-group">
+                    <p class="filter-group-label">Manufactures</p>
+                    <div class="filter-option-grid">
+                        <label class="filter-chip"><input type="checkbox" checked> Ferrari</label>
+                        <label class="filter-chip"><input type="checkbox" checked> Porsche</label>
+                        <label class="filter-chip"><input type="checkbox"> Mercedes</label>
+                        <label class="filter-chip"><input type="checkbox"> Bentley</label>
+                        <label class="filter-chip"><input type="checkbox"> BMW</label>
+                        <label class="filter-chip"><input type="checkbox"> WTC</label>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <p class="filter-group-label">Color</p>
+                    <select class="filter-select" id="colorSelect">
+                        <option value="all">All Colors</option>
+                        <option value="blue">Blue</option>
+                        <option value="red">Red</option>
+                        <option value="black">Black</option>
+                        <option value="white">White</option>
+                        <option value="green">Green</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <p class="filter-group-label">Model Year</p>
+                    <div class="filter-range-header">
+                        <span>From</span>
+                        <span id="yearValue">2020</span>
+                    </div>
+                    <input class="filter-slider" id="yearSlider" type="range" min="2018" max="2025" value="2020">
+                </div>
+
+                <div class="filter-group">
+                    <p class="filter-group-label">Mileage (KM)</p>
+                    <div class="filter-range-header">
+                        <span>Up to</span>
+                        <span id="mileageValue">50,000 KM</span>
+                    </div>
+                    <input class="filter-slider" id="mileageSlider" type="range" min="5000" max="100000" step="5000" value="50000">
+                </div>
+
+                <button class="filter-apply-btn" id="applyFilters" type="button">APPLY FILTERS</button>
+            </div>
+        </div>
+
+        <nav class="bottom-nav">
+            <div class="nav-shadow"></div>
+            <div class="nav-items">
+                <a href="index.html" class="nav-item">
+                    <img src="assets/icon-home.svg" alt="Home" class="nav-icon">
+                    <span class="nav-label">HOME</span>
+                </a>
+                <a href="search.html" class="nav-item active">
+                    <img src="assets/icon-search.svg" alt="Search" class="nav-icon">
+                    <span class="nav-label">SEARCH</span>
+                </a>
+                <a href="profile.html" class="nav-item">
+                    <img src="assets/icon-profile.svg" alt="Profile" class="nav-icon">
+                    <span class="nav-label">PROFILE</span>
+                </a>
+            </div>
+        </nav>
+    </div>
+
+    <script>
+        const filterToggle = document.getElementById('filterToggle');
+        const filterButton = document.getElementById('filterButton');
+        const filterOverlay = document.getElementById('filterOverlay');
+        const filterClose = document.getElementById('filterClose');
+        const applyFilters = document.getElementById('applyFilters');
+        const yearSlider = document.getElementById('yearSlider');
+        const mileageSlider = document.getElementById('mileageSlider');
+        const yearValue = document.getElementById('yearValue');
+        const mileageValue = document.getElementById('mileageValue');
+
+        const openFilters = () => filterOverlay.classList.add('open');
+        const closeFilters = () => filterOverlay.classList.remove('open');
+
+        [filterToggle, filterButton].forEach((button) => {
+            button.addEventListener('click', openFilters);
+        });
+
+        filterClose.addEventListener('click', closeFilters);
+        applyFilters.addEventListener('click', closeFilters);
+
+        filterOverlay.addEventListener('click', (event) => {
+            if (event.target === filterOverlay) {
+                closeFilters();
+            }
+        });
+
+        const formatMileage = (value) => `${Number(value).toLocaleString()} KM`;
+        yearSlider.addEventListener('input', () => {
+            yearValue.textContent = yearSlider.value;
+        });
+        mileageSlider.addEventListener('input', () => {
+            mileageValue.textContent = formatMileage(mileageSlider.value);
+        });
+    </script>
+</body>
+</html>

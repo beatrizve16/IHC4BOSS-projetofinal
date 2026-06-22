@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4BOSS - Perfil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container profile-container">
+        <header class="header profile-header">
+            <a href="index.html" class="header-back-btn" aria-label="Go to home">
+                <svg class="back-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+            </a>
+            <a href="index.html" class="logo-link">
+                <h1 class="logo">4BOSS</h1>
+            </a>
+            <button class="header-menu-btn">
+                <svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="1"></circle>
+                    <circle cx="19" cy="12" r="1"></circle>
+                    <circle cx="5" cy="12" r="1"></circle>
+                </svg>
+            </button>
+        </header>
+
+        <main class="main profile-main">
+            <section class="profile-header-section">
+                <div class="profile-avatar-wrapper">
+                    <div class="profile-avatar-overlay">
+                        <img src="assets/profile-avatar.png" alt="Ricardo Santos" class="profile-avatar">
+                    </div>
+                    <div class="profile-avatar-border">
+                        <svg class="profile-avatar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </div>
+                </div>
+                <div class="profile-info">
+                    <h2 class="profile-name">Ricardo Santos</h2>
+                    <div class="profile-badges">
+                        <span class="profile-badge-platinum">MEMBRO PLATINUM</span>
+                        <span class="profile-since">• DESDE 2021</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="profile-bento-grid">
+                <section class="profile-section minhas-propostas-section">
+                    <div class="section-header">
+                        <h3 class="section-title">Minhas<br>Propostas</h3>
+                        <p class="section-link">Ver<br>todas</p>
+                    </div>
+                    
+                    <div class="offer-item">
+                        <div class="offer-car-image">
+                            <img src="assets/card-porsche.png" alt="Ferrari SF90 Stradale" class="offer-car">
+                        </div>
+                        <div class="offer-details">
+                            <span class="offer-status">PROPOSTA<br>ATIVA</span>
+                            <h4 class="offer-title">Ferrari<br>SF90<br>Stradale</h4>
+                            <p class="offer-analysis">Status: Em<br>análise<br>financeira</p>
+                        </div>
+                        <div class="offer-price-action">
+                            <div class="offer-price">
+                                <span class="price-value">R$<br>6.450.000</span>
+                            </div>
+                            <button class="offer-action-btn">
+                                <svg class="action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="profile-section garagem-section">
+                    <div class="section-header garagem-header">
+                        <h3 class="section-title">Garagem</h3>
+                        <button class="garagem-icon-btn">
+                            <svg class="garagem-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 9h18v10H3z"></path>
+                                <path d="M3 9L5 3h14l2 6"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="garagem-items">
+                        <div class="garagem-item propriedade">
+                            <p class="garagem-label">PROPRIEDADE</p>
+                            <h4 class="garagem-title">Lamborghini Aventador SVJ</h4>
+                        </div>
+                        <div class="garagem-item salvo">
+                            <p class="garagem-label">SALVO</p>
+                            <h4 class="garagem-title">Porsche 911 GT3 RS</h4>
+                        </div>
+                    </div>
+
+                    <button class="explore-collection-btn">EXPLORAR COLEÇÃO</button>
+                </section>
+
+                <!-- Section - Suporte Concierge -->
+                <section class="profile-section concierge-section">
+                    <div class="concierge-icon-wrapper">
+                        <svg class="concierge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                    </div>
+                    <div class="concierge-content">
+                        <h3 class="concierge-title">Suporte Concierge</h3>
+                        <p class="concierge-description">Acesso direto ao seu consultor privado 24/7 para aquisições e logística.</p>
+                    </div>
+                    <button class="concierge-button">FALAR COM CONSULTOR<svg class="button-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+                </section>
+
+                <section class="profile-section settings-section">
+                    <h3 class="section-title settings-title">Configurações</h3>
+                    
+                    <div class="settings-items">
+                        <div class="settings-item">
+                            <div class="settings-item-left">
+                                <svg class="settings-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </svg>
+                                <span class="settings-label">Dados Pessoais</span>
+                            </div>
+                            <svg class="settings-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 18l6-6-6-6"/>
+                            </svg>
+                        </div>
+
+                        <div class="settings-item">
+                            <div class="settings-item-left">
+                                <svg class="settings-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                                </svg>
+                                <span class="settings-label">Segurança & Privacidade</span>
+                            </div>
+                            <svg class="settings-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 18l6-6-6-6"/>
+                            </svg>
+                        </div>
+
+                        <div class="settings-item">
+                            <div class="settings-item-left">
+                                <svg class="settings-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                                    <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                                </svg>
+                                <span class="settings-label">Notificações Push</span>
+                            </div>
+                            <svg class="settings-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 18l6-6-6-6"/>
+                            </svg>
+                        </div>
+
+                        <button class="logout-button">LOGOUT DA CONTA</button>
+                    </div>
+                </section>
+            </section>
+        </main>
+
+        <nav class="bottom-nav">
+            <div class="nav-shadow"></div>
+            <div class="nav-items">
+                <a href="index.html" class="nav-item">
+                    <img src="assets/icon-home.svg" alt="Home" class="nav-icon">
+                    <span class="nav-label">Home</span>
+                </a>
+                <a href="search.html" class="nav-item">
+                    <img src="assets/icon-search.svg" alt="Search" class="nav-icon">
+                    <span class="nav-label">Search</span>
+                </a>
+                <a href="profile.html" class="nav-item active-profile">
+                    <img src="assets/icon-profile.svg" alt="Profile" class="nav-icon">
+                    <span class="nav-label">Profile</span>
+                </a>
+            </div>
+        </nav>
+    </div>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4BOSS - Enviar Proposta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container proposal-container">
+        <!-- Header - TopAppBar -->
+        <header class="header proposal-header">
+            <a href="index.html" class="header-back-btn" aria-label="Go to home">
+                <svg class="back-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+            </a>
+            <a href="index.html" class="logo-link">
+                <h1 class="logo">4BOSS</h1>
+            </a>
+            <button class="header-menu-btn">
+                <svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="1"></circle>
+                    <circle cx="19" cy="12" r="1"></circle>
+                    <circle cx="5" cy="12" r="1"></circle>
+                </svg>
+            </button>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main proposal-main">
+            <!-- Page Context Header -->
+            <section class="page-context-header">
+                <div class="context-label">PRIVATE INVENTORY</div>
+                <h2 class="context-title">Enviar Proposta</h2>
+                <div class="context-background"></div>
+            </section>
+
+            <!-- Container -->
+            <div class="proposal-content-wrapper">
+                <!-- Vehicle Mini Card (Contextual) -->
+                <section class="vehicle-mini-card">
+                    <div class="vehicle-card-background">
+                        <div class="vehicle-image-wrapper">
+                            <img src="assets/card-porsche.png" alt="Mazzanti Evantra V8" class="vehicle-image">
+                        </div>
+                        <div class="vehicle-gradient"></div>
+                        <div class="vehicle-badge-wrapper">
+                            <div class="vehicle-badge">EXCLUSIVAMENTE NA 4BOSS</div>
+                        </div>
+                    </div>
+                    <div class="vehicle-info">
+                        <h3 class="vehicle-title">Mazzanti Evantra V8</h3>
+                        <p class="vehicle-subtitle">Carbon Edition • Custom Black</p>
+                        <div class="vehicle-specs">
+                            <div class="vehicle-spec-item">
+                                <span class="vehicle-spec-label">POTÊNCIA</span>
+                                <span class="vehicle-spec-value">751 HP</span>
+                            </div>
+                            <div class="vehicle-spec-divider"></div>
+                            <div class="vehicle-spec-item">
+                                <span class="vehicle-spec-label">0-100 KM/H</span>
+                                <span class="vehicle-spec-value">3.2s</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vehicle-quote">
+                        <p class="quote-text">"Todas as propostas são revisadas individualmente pela nossa equipe de curadores para garantir a integridade do ecossistema 4Boss."</p>
+                    </div>
+                </section>
+
+                <!-- Proposal Form -->
+                <section class="proposal-form-section">
+                    <form class="proposal-form" id="proposalForm">
+                        <!-- Full Name Field -->
+                        <div class="form-group">
+                            <label for="fullName" class="form-label">NOME COMPLETO</label>
+                            <input type="text" id="fullName" class="form-input" placeholder="John Doe" required>
+                        </div>
+
+                        <!-- Telephone Field -->
+                        <div class="form-group">
+                            <label for="telephone" class="form-label">TELEFONE</label>
+                            <input type="tel" id="telephone" class="form-input" placeholder="+55 (11) 99999-9999" required>
+                        </div>
+
+                        <!-- Address Field -->
+                        <div class="form-group">
+                            <label for="address" class="form-label">ENDEREÇO</label>
+                            <input type="text" id="address" class="form-input" placeholder="Av. Europa, 450 - São Paulo, SP" required>
+                        </div>
+
+                        <!-- Email Field -->
+                        <div class="form-group">
+                            <label for="email" class="form-label">E-MAIL CORPORATIVO</label>
+                            <input type="email" id="email" class="form-input" placeholder="contato@empresa.com" required>
+                        </div>
+
+                        <!-- Proposal Text Area -->
+                        <div class="form-group textarea-group">
+                            <label for="proposalText" class="form-label">SUA PROPOSTA</label>
+                            <textarea id="proposalText" class="form-textarea" placeholder="Descreva os termos da sua oferta, condições de pagamento ou solicitações de personalização..." required></textarea>
+                        </div>
+
+                        <!-- Terms Checkbox -->
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="termsCheckbox" class="form-checkbox" required>
+                            <label for="termsCheckbox" class="checkbox-label">Confirmo que as informações acima são verdadeiras e que possuo fundos verificáveis para a aquisição deste veículo conforme as diretrizes da 4Boss.</label>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="submit-button">
+                            <span class="submit-text">ENVIAR PROPOSTA</span>
+                            <svg class="submit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </form>
+                </section>
+            </div>
+        </main>
+
+        <!-- Success Overlay (Hidden by default) -->
+        <div class="success-overlay" id="successOverlay">
+            <div class="success-content">
+                <div class="success-icon-wrapper">
+                    <div class="success-circle-check">
+                        <svg class="success-checkmark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </div>
+                    <div class="success-outer-ring"></div>
+                </div>
+                <div class="success-message-wrapper">
+                    <h3 class="success-heading">PROPOSTA ENVIADA COM SUCESSO</h3>
+                    <p class="success-text">Sua oferta foi registrada em nosso sistema privado. Um de nossos especialistas entrará em contato via e-mail corporativo em até 24 horas.</p>
+                </div>
+                <button class="success-button" id="returnButton">VOLTAR AO INVENTÁRIO</button>
+            </div>
+        </div>
+
+        <!-- Bottom Navigation Bar -->
+        <nav class="bottom-nav">
+            <div class="nav-shadow"></div>
+            <div class="nav-items">
+                <a href="index.html" class="nav-item">
+                    <img src="assets/icon-home.svg" alt="Home" class="nav-icon">
+                    <span class="nav-label">Home</span>
+                </a>
+                <a href="search.html" class="nav-item">
+                    <img src="assets/icon-search.svg" alt="Search" class="nav-icon">
+                    <span class="nav-label">Search</span>
+                </a>
+                <a href="profile.html" class="nav-item">
+                    <img src="assets/icon-profile.svg" alt="Profile" class="nav-icon">
+                    <span class="nav-label">Profile</span>
+                </a>
+            </div>
+        </nav>
+    </div>
+
+    <script>
+        const proposalForm = document.getElementById('proposalForm');
+        const successOverlay = document.getElementById('successOverlay');
+        const returnButton = document.getElementById('returnButton');
+
+        proposalForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Show success overlay
+            successOverlay.classList.add('show');
+        });
+
+        proposalForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            window.location.href = 'proposalsent.html';
+        });
+
+        returnButton.addEventListener('click', function() {
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+</html>
